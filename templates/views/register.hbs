@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+    
+{{>header}}
+
+{{!-- designing --}}
+
+ <style>
+
+    *{
+        padding: 0;
+        margin: 0;
+        
+    }
+
+.container{
+    text-align: center;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     height: auto;
+     width: 650px;
+     background-color: #e9edf0;  
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    justify-content: space-between;
+    margin: 5px;
+}
+.form input{
+    padding: 5px;
+    margin: 3px;
+    width: 300px;
+    border: 1.5px solid rgb(218, 180, 218);
+background-color: rgb(247, 249, 249);
+border-radius: 10px;
+}
+ button{
+    border: none;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin: 3px;
+    background-color:  rgb(77, 202, 132);
+    color: rgb(70, 84, 103);
+}
+
+button:hover{
+ background-color: rgb(48, 238, 130);
+}
+  </style>
+
+<body>
+    <div class="container">
+       <h3 class="register-heading">Registration Form </h3>
+
+    <form action="/register" method="post">
+        <div class="form">
+        
+                <div>
+                    <input type="name" placeholder="First Name"  name="firstname">
+                </div>
+
+                <div>
+                    <input type="name" placeholder="Last Name"  name="lastname">
+                </div>
+                <div>
+                    <input type="number"placeholder="Work Number" name="worknumber">
+                </div>
+                <div>
+                    <input type="email" placeholder="Email" name="email">
+                </div>
+                <div>
+                    <input type="password" placeholder="Password" name="password">
+                </div>
+                <div>
+                    <input type="password" placeholder="confirm password" name="confirmpassword">
+                </div>
+
+           
+                <div>
+                    <input type="adress" placeholder="Adress"  name="adress">
+                </div>
+        
+
+                <div >
+                    <input type="city" placeholder="City"  name="city">
+                </div>
+                <div >
+                    <input type="country" placeholder="Country"  name="country">
+                </div>
+                <div >
+                    <input type="zipcode" placeholder="Zipcode"  name="zipcode">
+                </div>
+      
+                
+                <div>
+                    <button type="submit" value="Register">Register</button>
+                </div>
+                </div>
+    </form>
+   
+</body>
+
+</html>
